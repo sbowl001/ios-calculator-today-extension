@@ -14,6 +14,7 @@ class TodayViewController: UIViewController, NCWidgetProviding, UITextFieldDeleg
         
     @IBOutlet weak var textField: UITextField!
     
+    @IBOutlet weak var calculatorView: UIView!
     private let numberFormatter: NumberFormatter = {
         let formatter = NumberFormatter()
         formatter.allowsFloats = true
@@ -71,14 +72,28 @@ class TodayViewController: UIViewController, NCWidgetProviding, UITextFieldDeleg
     @IBAction func plusButtonTapped(_ sender: UIButton) {
         calculator.push(operator: .add)
     }
+    
+    func textFieldShouldClear(_ textField: UITextField) -> Bool {
+               calculator.clear()
+               digitAccumulator.clear()
+               return true
+           }
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
-        // Perform any setup necessary in order to update the view.
         
-        // If an error is encountered, use NCUpdateResult.Failed
-        // If there's no update required, use NCUpdateResult.NoData
-        // If there's an update, use NCUpdateResult.NewData
+    
         
         completionHandler(NCUpdateResult.newData)
     }
-    
+    func widgetActiveDisplayModeDidChange(_ activeDisplayMode: NCWidgetDisplayMode, withMaximumSize maxSize: CGSize) {
+        switch activeDisplayMode {
+        case .compact:
+            preferredContentSize = maxSize
+            calculatorView.isHidden = true
+        case .expanded:
+            preferredContentSize = CGSize(width: maxSize.width, height: 300)
+            calculatorView.isHidden = false
+        @unknown default:
+            break
+        }
+    }
 }

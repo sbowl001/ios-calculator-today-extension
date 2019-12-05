@@ -20,6 +20,7 @@
 		A3ED4CDD2398B57700DD7D00 /* Calculator Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A3ED4CD12398B57700DD7D00 /* Calculator Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A3ED4CE22398B69C00DD7D00 /* RPN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3C7CD9D2327379300A59451 /* RPN.framework */; };
 		A3ED4CE32398B69C00DD7D00 /* RPN.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A3C7CD9D2327379300A59451 /* RPN.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A3ED4CE92399115300DD7D00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3C7CD8C2327372E00A59451 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -296,6 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3ED4CE92399115300DD7D00 /* Assets.xcassets in Resources */,
 				A3ED4CD92398B57700DD7D00 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -490,12 +492,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P6F637GFXF;
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = demo.Calculator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stephaniebowles.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -508,12 +511,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P6F637GFXF;
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = demo.Calculator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stephaniebowles.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -524,6 +528,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P6F637GFXF;
 				INFOPLIST_FILE = "Calculator Widget/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -531,7 +536,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "demo.Calculator.Calculator-Widget";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stephaniebowles.Calculator.Calculator-Widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -543,6 +548,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P6F637GFXF;
 				INFOPLIST_FILE = "Calculator Widget/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -550,7 +556,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "demo.Calculator.Calculator-Widget";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stephaniebowles.Calculator.Calculator-Widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
