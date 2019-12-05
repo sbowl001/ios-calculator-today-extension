@@ -24,7 +24,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3PV-pr-zRX">
-                                        <rect key="frame" x="0.0" y="34" width="320" height="266"/>
+                                        <rect key="frame" x="0.0" y="34" width="320" height="236"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="H3v-aW-5H1">
                                                 <rect key="frame" x="20" y="30" width="280" height="162"/>
@@ -232,6 +232,13 @@
                                             <constraint firstItem="H3v-aW-5H1" firstAttribute="top" secondItem="3PV-pr-zRX" secondAttribute="top" constant="30" id="rYz-xq-lvD"/>
                                         </constraints>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PzZ-Lf-BE4">
+                                        <rect key="frame" x="0.0" y="270" width="320" height="30"/>
+                                        <state key="normal" title="Copy"/>
+                                        <connections>
+                                            <action selector="copyButtonTapped:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="igX-Z1-fIm"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>

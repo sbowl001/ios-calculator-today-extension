@@ -78,6 +78,12 @@ class TodayViewController: UIViewController, NCWidgetProviding, UITextFieldDeleg
                digitAccumulator.clear()
                return true
            }
+    
+    
+    @IBAction func copyButtonTapped(_ sender: Any) {
+        UIPasteboard.general.string = textField.text
+        textField.text = ""
+    }
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
         
     
